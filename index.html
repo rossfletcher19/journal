@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>A Simple Journal</title>
   </head>
   <body>
-    <h1>A Simple Journal app</h1>
-    <form id="journal-entry">
-      <label for="title">Title your journal entry.</label>
-      <input id="title" type="text">
-      <br>
-      <label for="content">Add content to your journal entry.</label>
-      <textarea id="content" type="text"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="entry-post"></ul>
-    <p id="output"></p>
+    <div class="container">
+      <h3>Well look at the time!</h3>
+      <h3 id="time"></h3>
+      <h1>A Simple Journal to Record your thoughts!!!!</h1>
+      <form id="journal-entry">
+        <label for="title">Title your journal entry.</label>
+        <input id="title" type="text">
+        <br>
+        <label for="content">Add content to your journal entry.</label>
+        <textarea id="content" type="text"></textarea>
+        <button class="btn-success" type="submit">Submit</button>
+      </form>
+      <ul id="entry-post"></ul>
+      <p id="output"></p>
+    </div>
   </body>
 </html>

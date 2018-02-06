@@ -1,5 +1,4 @@
-
-var Entry = require('./../js/journal.js').entryModule
+var Entry = require('./../js/journal.js').entryModule;
 
 
 $(document).ready(function(){
@@ -7,12 +6,15 @@ $(document).ready(function(){
     event.preventDefault();
     var title = $('#title').val();
     var content = $('#content').val();
-    $('#entry-post').prepend('<h1> ' + title + ' </h1>' +
-                              '<br>' +
+    $('#entry-post').prepend('<h3> ' + title + ' </h3>' +
                               '<p> ' + content + ' </p>');
 
     var simpleEntry = new Entry(title, content);
     var wordCount = simpleEntry.countWords(content);
     $('#output').text('Count: ' + wordCount);
   });
+});
+
+$(document).ready(function(){
+  $('#time').text(moment());
 });
