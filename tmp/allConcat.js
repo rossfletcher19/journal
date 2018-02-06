@@ -1,3 +1,4 @@
+
 var Entry = require('./../js/journal.js').entryModule
 
 

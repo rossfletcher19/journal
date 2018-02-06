@@ -3,13 +3,13 @@ function Entry(title, content) {
   this.content = content;
 }
 
-Entry.prototype.vowelsAndConsonants = function(entry) {
+Entry.prototype.counter = function(content) {
   var output = entry.split(" ");
   console.log('reached countWords function');
   return output.length;
 }
 
-exports.vowelsAndConsonantsModule = Entry;
+exports.entryModule = Entry;
 
 
 
